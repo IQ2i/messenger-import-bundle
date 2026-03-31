@@ -1,0 +1,37 @@
+{
+  "name": "iq2i/messenger-import-bundle",
+  "type": "symfony-bundle",
+  "description": "A Symfony bundle that tracks the completion of asynchronous imports dispatched via symfony/messenger",
+  "license": "MIT",
+  "require": {
+    "php": ">=8.1",
+    "symfony/clock": "^6.4|^7.4|^8.0",
+    "symfony/dependency-injection": "^6.4|^7.4|^8.0",
+    "symfony/http-kernel": "^6.4|^7.4|^8.0",
+    "symfony/messenger": "^6.4|^7.4|^8.0"
+  },
+  "require-dev": {
+    "doctrine/orm": "^2.20 | ^3.0",
+    "friendsofphp/php-cs-fixer": "^3.52",
+    "phpstan/phpstan": "^2.1",
+    "phpstan/phpstan-symfony": "^2.0",
+    "phpunit/phpunit": "^10.5",
+    "symfony/framework-bundle": "^6.4|^7.4|^8.0"
+  },
+  "config": {
+    "sort-packages": true,
+    "allow-plugins": {
+      "symfony/runtime": true
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "IQ2i\\MessengerImportBundle\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "IQ2i\\MessengerImportBundle\\Tests\\": "tests"
+    }
+  }
+}
